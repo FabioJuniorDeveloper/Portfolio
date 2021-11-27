@@ -521,5 +521,8 @@ footer p {
     .article.portfolio-card .img-portfolio {
         height: 280px;
     }
+    .area-portfolio {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
 }
 
