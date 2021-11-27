@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fabio Junior - Desenvolvedor Front-End em formação.</title>
+    <link rel="icon" type="image/svg" href="assets/img/quem-sou-eu.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<script type="text/javascript">
+    window.onload = function () {
+        document.querySelector(".menuMobile").addEventListener("click", function () {
+            if (document.querySelector("nav ul").style.display == 'flex') {
+                document.querySelector("nav ul").style.display = 'none'
+            } else {
+                document.querySelector("nav ul").style.display = 'flex'
+            }
+        });
+    };
+</script>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="" class="logo">Fabio</a>
+                <div class="menuMobile">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>
+                <ul>
+                    <li><a href="#banner">Home</a> </li>
+                    <li> <a href="#Sobre">Sobre</a> </li>
+                    <li><a href="#Habilidades">Habilidades</a> </li>
+                    <li><a href="#Portfolio">Portfolio</a> </li>
+                    <li><a href="#Contato">Contato</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="banner" id="banner">
+        <div class="container">
+            <div class="midia-social">
+                <a href="https://github.com/fabiobud" target="_blank"><img src="assets/ICONS/github-roxo.svg"
+                        alt="github"></a>
+                <a href="https://www.linkedin.com/in/f%C3%A1bio-silva-dev/" target="_blank"><img
+                        src="assets/ICONS/linkedin-alt-roxo.svg" alt="linkedin">
+                </a>
+            </div>
+            <div class="banner-text">
+                <span>Olá, eu sou</span>
+                <h1>Fabio Junior</h1>
+                <h2>Front-End em formação.</h2>
+                <p>Olá, seja bem vindo(a) ao meu portfólio.</p>
+                <a href="##" class="btn">Contate-me</a>
+            </div>
+            <div class="banner-img">
+                <img src="assets/img/undraw_programming_2svr.svg" alt="">
+            </div>
+            <div class="banner-scrow-mouse">
+                <img src="assets/ICONS/mouse-alt-roxo.svg" alt="mouse">
+                <span>Scroll Down</span>
+                <i class='bx bxs-down-arrow-alt roxo'></i>
+            </div>
+        </div>
+    </main>
+
+    <section class="Sobre" id="Sobre">
+        <div class="container">
+            <div class="titulo-section">
+                <h2>Sobre</h2>
+                <span>Introdução</span>
+            </div>
+            <div class="Sobre--text">
+                <article class="flex-sobre"><img src="assets/img/quem-sou-eu.svg" alt=""></article>
+                <article>
+                    <p>
+                        Olá, me chamo Fábio, tenho 15 anos, estou cursando o 1°ano do Ensino Médio, atualmente estou me
+                        especializando na área de desenvolvedor de software, uma área que eu estudo desde o ano passado
+                        e gosto muito, pois me possibilita tirar as ideias do papel e colocar no mundo. Atualmente estou
+                        aprendendo HTML5 e CSS3, mas estou aberto para aprender novas tecnologias e aprendizados, também
+                        estou me dedicando a aprender inglês, pois pode me possibilitar novas portas ao mundo todo.
+                    </p>
+                    <div class="Sobre-area-informacao">
+                        <div class="Sobre-informacao">
+                            <i class='bx bxs-user'></i>
+                            <p>Fabio Junior</p>
+                        </div>
+                        <div class="Sobre-informacao">
+                            <i class='bx bxs-phone'></i>
+                            <p>+55 (11) 964736174</p>
+                        </div>
+                        <div class="Sobre-informacao">
+                            <i class='bx bxs-envelope'></i>
+                            <p>fabioclash2005@gmail.com</p>
+                        </div>
+                    </div>
+                    <a href="assets/img/teste.docx" download="teste.docx" type="" class="btn">Abaixar CV</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="Habilidades" id="Habilidades">
+        <div class="container">
+            <div class="titulo-section">
+                <h2>Habilidades</h2>
+                <span>My Skills</span>
+            </div>
+            <div class="habilidade--text">
+                <article class="flex-habilidade">
+                    <div class="area-progresso">
+                        <div class="habilidade-nome">
+                            <span>HTML</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="barra-de-progresso">
+                            <div class="barra-de-progresso-ComCor"></div>
+                        </div>
+                    </div>
+                    <div class="area-progresso">
+                        <div class="habilidade-nome">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="barra-de-progresso">
+                            <div class="barra-de-progresso-ComCor CSS-progresso"></div>
+                        </div>
+                    </div>
+                    <div class="area-progresso">
+                        <div class="habilidade-nome">
+                            <span>Javasript</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="barra-de-progresso">
+                            <div class="barra-de-progresso-ComCor Javascript-progresso"></div>
+                        </div>
+                    </div>
+                    <div class="area-progresso">
+                        <div class="habilidade-nome">
+                            <span>Git/Github</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="barra-de-progresso">
+                            <div class="barra-de-progresso-ComCor Git-Github-progresso"></div>
+                        </div>
+                    </div>
+                    <div class="area-progresso">
+                        <div class="habilidade-nome">
+                            <span>React</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="barra-de-progresso">
+                            <div class="barra-de-progresso-ComCor React-progresso"></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="habilidade-images"><img src="assets/img/skills.png" alt="habilidades em imagem">
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="Portfolio" id="Portfolio">
+        <div class="container">
+            <div class="titulo-section">
+                <h2>Portfolio</h2>
+                <span>Projetos recentes</span>
+            </div>
+            <div class="area-portfolio">
+                <article class="portfolio-card">
+                    <div class="img-portfolio"><img src="assets/img/projeto-1.png" alt=" imagem do projeto 1"></div>
+                    <div class="titulo-portfolio">
+                        <h3>Loja de carros fictícia da Audi</h3>
+                    </div>
+                    <div class="descricao-portfolio">
+                        <p>Projeto criado com a intenção de simular uma loja de carros, com videos, imagens, descrições
+                            e
+                            entre outros.</p>
+                    </div>
+                    <div class="tecnologias-portfolio">
+                        <p>HTML E CSS</p>
+                    </div>
+                    <div class="demo-portfolio"><a href="#" class="btn">Demo do site</a></div>
+                </article>
+
+                <article class="portfolio-card">
+                    <!-- <div class="img-portfolio">
+                        <img src="assets/img/projeto-2.png" alt="imagem do projeto 2">
+                    </div> -->
+                    <div class="titulo-portfolio">
+                        <h3>Em breve</h3>
+                    </div>
+                    <div class="descricao-portfolio">
+                        <p>Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                        </p>
+                    </div>
+                    <!-- <div class="tecnologias-portfolio">
+                        <p></p>
+                    </div> -->
+                    <!-- <div class="demo-portfolio"><a href="#" class="btn">Demo do site</a></div> -->
+                </article>
+
+                <article class="portfolio-card">
+                    <!-- <div class="img-portfolio"><img src="assets/img/projeto-3.png" alt=" imagem do projeto3"></div> -->
+                    <div class="titulo-portfolio">
+                        <h3>Em breve</h3>
+                    </div>
+                    <div class="descricao-portfolio">
+                        <p>Pegue o café e espere um pouco, estou desenvolvendo o projeto.
+                        </p>
+                    </div>
+                    <!-- <div class="tecnologias-portfolio">
+                        <p></p>
+                    </div> -->
+                    <!-- <div class="demo-portfolio"><a href="#" class="btn">Demo do site</a></div> -->
+                </article>
+
+                <article class="portfolio-card">
+                    <div class="img-portfolio"><img src="assets/img/projeto-4.png" alt="imagem do projeto 4"></div>
+                    <div class="titulo-portfolio">
+                        <h3>Loja fictícia de uma lanchonete</h3>
+                    </div>
+                    <div class="descricao-portfolio">
+                        <p>
+                            Projeto criado com a intenção de simular uma loja de lanchonete, com cadastro de nome,
+                            email,imagens e entre outros.
+                        </p>
+                    </div>
+                    <div class="tecnologias-portfolio">
+                        <p>HTML E CSS</p>
+                    </div>
+                    <div class="demo-portfolio"><a href="https://fabiobud.github.io/Site-Lanchonete/" target="_blank"
+                            class="btn">Demo
+                            do site</a></div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="Contato" id="Contato">
+        <div class="container">
+            <div class="titulo-section">
+                <h2>Contato</h2>
+                <span>Se você quiser falar comigo, por favor, não hesite em me enviar mensagem.</span>
+            </div>
+            <div class="Contato-area">
+                <article class="contato-email">
+                    <a href="mailto:fabioclash2005@gmail.com" class="btn">📧 fabioclash2005@gmail.com</a>
+                </article>
+                <article class="contato-redes-sociais">
+                    <a href="https://www.instagram.com/ofabiojunior__/" target="_blank" class="btn">📲 Instagram</a>
+                    <a href="https://www.linkedin.com/in/f%C3%A1bio-silva-dev/" target="_blank" class="btn">💼 linkedin
+                    </a>
+                    <a href="https://github.com/fabiobud" target="_blank" class="btn"> 💻 Github</a>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h2>Fabio</h2>
+        <p>Template criado com inspiração da CarpoolVenom </p>
+        <p>CarpoolVenom Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
