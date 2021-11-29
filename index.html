@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
@@ -29,6 +30,10 @@
 </script>
 
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <header>
         <div class="container">
             <nav>
@@ -49,7 +54,7 @@
         </div>
     </header>
 
-    <main class="banner" id="banner">
+    <main class="banner" id="banner" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
         <div class="container">
             <div class="midia-social">
                 <a href="https://github.com/fabiobud" target="_blank"><img src="assets/ICONS/github-roxo.svg"
@@ -76,7 +81,7 @@
         </div>
     </main>
 
-    <section class="Sobre" id="Sobre">
+    <section class="Sobre" id="Sobre" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
         <div class="container">
             <div class="titulo-section">
                 <h2>Sobre</h2>
@@ -112,7 +117,7 @@
         </div>
     </section>
 
-    <section class="Habilidades" id="Habilidades">
+    <section class="Habilidades" id="Habilidades" data-aos="fade-down" data-aos-duration="1500">
         <div class="container">
             <div class="titulo-section">
                 <h2>Habilidades</h2>
@@ -172,14 +177,15 @@
         </div>
     </section>
 
-    <section class="Portfolio" id="Portfolio">
+    <section class="Portfolio" id="Portfolio" data-aos="fade-down" data-aos-duration="1500">
         <div class="container">
             <div class="titulo-section">
                 <h2>Portfolio</h2>
                 <span>Projetos recentes</span>
             </div>
             <div class="area-portfolio">
-                <article class="portfolio-card">
+                <article class="portfolio-card" class="Habilidades" id="Habilidades" data-aos-delay="500"
+                    data-aos="fade-down" data-aos-duration="2000">
                     <div class="img-portfolio"><img src="assets/img/projeto-1.png" alt=" imagem do projeto 1"></div>
                     <div class="titulo-portfolio">
                         <h3>Loja de carros fictícia da Audi</h3>
@@ -196,7 +202,7 @@
                             class="btn">Demo do site</a></div>
                 </article>
 
-                <article class="portfolio-card">
+                <article class="portfolio-card" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1500">
                     <!-- <div class="img-portfolio">
                         <img src="assets/img/projeto-2.png" alt="imagem do projeto 2">
                     </div> -->
@@ -213,7 +219,7 @@
                     <!-- <div class="demo-portfolio"><a href="#" class="btn">Demo do site</a></div> -->
                 </article>
 
-                <article class="portfolio-card">
+                <article class="portfolio-card" data-aos-delay="1500" data-aos="fade-down" data-aos-duration="2000">
                     <!-- <div class="img-portfolio"><img src="assets/img/projeto-3.png" alt=" imagem do projeto3"></div> -->
                     <div class="titulo-portfolio">
                         <h3>Em breve</h3>
@@ -228,7 +234,7 @@
                     <!-- <div class="demo-portfolio"><a href="#" class="btn">Demo do site</a></div> -->
                 </article>
 
-                <article class="portfolio-card">
+                <article class="portfolio-card" data-aos-delay="2000" data-aos="fade-down" data-aos-duration="2000">
                     <div class="img-portfolio"><img src="assets/img/projeto-4.png" alt="imagem do projeto 4"></div>
                     <div class="titulo-portfolio">
                         <h3>Loja fictícia de uma lanchonete</h3>
@@ -251,7 +257,7 @@
         </div>
     </section>
 
-    <section class="Contato" id="Contato">
+    <section class="Contato" id="Contato" data-aos="fade-down" data-aos-duration="2000">
         <div class="container">
             <div class="titulo-section">
                 <h2>Contato</h2>
