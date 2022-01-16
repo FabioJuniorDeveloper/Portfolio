@@ -17,19 +17,12 @@
 
 
 </head>
-<script type="text/javascript">
-    window.onload = function () {
-        document.querySelector(".menuMobile").addEventListener("click", function () {
-            if (document.querySelector("nav ul").style.display == 'flex') {
-                document.querySelector("nav ul").style.display = 'none'
-            } else {
-                document.querySelector("nav ul").style.display = 'flex'
-            }
-        });
-    };
-</script>
+
 
 <body>
+    <button class="scrollup" onclick="scrollUp()">
+        <i class='bx bx-up-arrow-alt icon-scrollup' style='color: #fff;'></i>
+    </button>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -129,46 +122,45 @@
                     <div class="area-progresso">
                         <div class="habilidade-nome">
                             <span>HTML</span>
-                            <span>92%</span>
+
                         </div>
-                        <div class="barra-de-progresso">
-                            <div class="barra-de-progresso-ComCor"></div>
+                        <div class="images-tech">
+                            <i class='bx bxl-html5 icon-tech' style='color:#4a00e0'></i>
                         </div>
                     </div>
                     <div class="area-progresso">
                         <div class="habilidade-nome">
                             <span>CSS</span>
-                            <span>90%</span>
+
                         </div>
-                        <div class="barra-de-progresso">
-                            <div class="barra-de-progresso-ComCor CSS-progresso"></div>
+                        <div class="images-tech">
+                            <i class='bx bxl-css3 icon-tech' style='color:#4a00e0'></i>
                         </div>
                     </div>
                     <div class="area-progresso">
                         <div class="habilidade-nome">
                             <span>Javasript</span>
-                            <span>0%</span>
+
                         </div>
-                        <div class="barra-de-progresso">
-                            <div class="barra-de-progresso-ComCor Javascript-progresso"></div>
-                        </div>
-                    </div>
-                    <div class="area-progresso">
-                        <div class="habilidade-nome">
-                            <span>Git/Github</span>
-                            <span>96%</span>
-                        </div>
-                        <div class="barra-de-progresso">
-                            <div class="barra-de-progresso-ComCor Git-Github-progresso"></div>
+                        <div class="images-tech">
+                            <i class='bx bxl-javascript icon-tech' style='color:#4a00e0'></i>
                         </div>
                     </div>
                     <div class="area-progresso">
                         <div class="habilidade-nome">
-                            <span>React</span>
-                            <span>0%</span>
+                            <span>Git</span>
+
                         </div>
-                        <div class="barra-de-progresso">
-                            <div class="barra-de-progresso-ComCor React-progresso"></div>
+                        <div class="images-tech">
+                            <i class='bx bxl-git icon-tech' style='color:#4a00e0'></i>
+                        </div>
+                    </div>
+                    <div class="area-progresso">
+                        <div class="habilidade-nome">
+                            <span>Github</span>
+                        </div>
+                        <div class="images-tech">
+                            <i class='bx bxl-github icon-tech' style='color:#4a00e0'></i>
                         </div>
                     </div>
                 </article>
@@ -289,7 +281,7 @@
         <p>Template criado com inspiração da CarpoolVenom </p>
         <p>CarpoolVenom Todos os direitos reservados.</p>
     </footer>
-
+    <script src="assets/JS/script.js"></script>
 </body>
 
 </html>

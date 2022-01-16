@@ -61,6 +61,29 @@ p {
     background-color: #0f0c27;
 }
 
+button.scrollup {
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 13px;
+    bottom: 20px;
+    /* padding: 0 0.3rem; */
+    border-radius: 0.4rem;
+    z-index: 999;
+    background: var(--hover);
+    display: none;
+    transition: .3s;
+}
+button.scrollup:hover {
+    background-color: var(--hover);
+}
+button.scrollup .icon-scrollup {
+    margin: auto;
+}
+
 /* HEADER */
 header {
     height: 62px;
@@ -210,6 +233,7 @@ section.Sobre {
 .Sobre .Sobre--text article p {
         font-weight: 400;
         text-align: justify;
+        max-width: 625px;
 }
 .Sobre .Sobre-area-informacao {
     margin: 1rem 0;
@@ -242,19 +266,20 @@ section .habilidade--text {
     align-items: center;
 }
 .area-progresso {
-    width: 94%;
+    height: 130px;
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+    border-bottom: 3px solid var(--cor-principal);
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 section .habilidade--text .habilidade-nome {
-     display: flex;
+     display: none;
      align-items: center;
      justify-content: space-between;
      font-weight: 500;
      font-size: 1.1rem;
      margin-bottom: 0.5rem;
-}
-.area-progresso {
-    margin-bottom: 2rem;
 }
 .barra-de-progresso {
      height: 0.5rem;
@@ -284,6 +309,23 @@ section .habilidade--text .habilidade-nome {
 article.habilidade-images {
     display: flex;
     justify-content: center;
+}
+article.flex-habilidade {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+    gap: 20px;
+}
+.images-tech {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images-tech .icon-tech{
+ font-size: 115px;
+ margin: 0;
 }
 
 /* PORTFOLIO */
@@ -443,18 +485,16 @@ footer p {
     }
     section .habilidade--text {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
-    .habilidade--text .flex-habilidade {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .article.portfolio-card .img-portfolio {
         height: 280px;
     }
     article.habilidade-images img {
-        width: 100%;
+        width: 65%;
     }
+
 }
 
 @media (max-width:425px) {
@@ -507,12 +547,9 @@ footer p {
     }
     section .habilidade--text {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
-    .habilidade--text .flex-habilidade {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .article.portfolio-card .img-portfolio {
         height: 280px;
     }
