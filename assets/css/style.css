@@ -263,7 +263,7 @@ section .habilidade--text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 4rem;
-    align-items: center;
+    gap: 50px;
 }
 .area-progresso {
     height: 130px;
@@ -306,9 +306,9 @@ section .habilidade--text .habilidade-nome {
     width: 0%;
 }
 
-article.habilidade-images {
-    display: flex;
-    justify-content: center;
+article.habilidade-images p {
+    max-width: 500px;
+    text-align: justify;
 }
 article.flex-habilidade {
     display: grid;
@@ -485,7 +485,7 @@ footer p {
     }
     section .habilidade--text {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 50px;
     }
     
     .article.portfolio-card .img-portfolio {
@@ -494,7 +494,9 @@ footer p {
     article.habilidade-images img {
         width: 65%;
     }
-
+    article.portfolio-card .img-portfolio img {
+        object-fit: cover;
+    }
 }
 
 @media (max-width:425px) {
@@ -547,7 +549,7 @@ footer p {
     }
     section .habilidade--text {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 50px;
     }
     
     .article.portfolio-card .img-portfolio {

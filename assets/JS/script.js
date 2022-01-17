@@ -26,3 +26,10 @@ window.onload = function () {
         }
     });
 };
+
+
+const techTexto = document.querySelector('.alterarTexto-tech')
+
+function AlterarTexto(TextoTech) {
+    techTexto.innerHTML = TextoTech;
+}
