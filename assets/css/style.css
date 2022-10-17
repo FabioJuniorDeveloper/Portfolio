@@ -101,7 +101,6 @@ nav {
 }
 a.logo {
     font-size: 1.1rem;
-    color: var(--color-text);
     font-weight: 600;
     margin: 0;
 }
@@ -419,7 +418,7 @@ footer p {
 /* DARK MODE */
 
  @media (prefers-color-scheme: dark) {
-    body, header, a.logo, ul li, li a {
+    body, header,  ul li, li a, a.logo {
         background-color: #0f0c27;
         color: #FFF;
     }
@@ -427,6 +426,8 @@ footer p {
         background-color: #FFF;
     }
 } 
+
+
 /* RESPONSIVIDADE */
 
 
