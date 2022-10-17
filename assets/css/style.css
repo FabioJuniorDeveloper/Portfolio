@@ -339,7 +339,6 @@ section.Portfolio {
 }
 article.portfolio-card {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     border-radius: 0.5rem;
