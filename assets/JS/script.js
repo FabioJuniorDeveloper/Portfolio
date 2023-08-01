@@ -34,6 +34,47 @@ function AlterarTexto(TextoTech) {
     techTexto.innerHTML = TextoTech;
 }
 
+//dark-mode
+const Ul  = document.querySelector('ul');
+let ToggleDarkTheme = () =>{
+    const body = document.querySelector('body');
+    const header = document.querySelector('header');
+    const elementAlink =  document.querySelectorAll('.toogle');
+    const toogleImg = document.querySelector('.toogle-img');
+    const toogleMM = document.querySelectorAll('.mmToogle');
+     
+    body.classList.toggle('dark-mode');
+    header.classList.toggle('dark-mode');
+
+    for (let elementos of elementAlink) {
+        elementos.classList.toggle('dark-mode')
+    }
+    for (let elementos of toogleMM) {
+        elementos.classList.toggle('dark-mode-mm')
+    }
+
+    if(body.classList.contains('dark-mode')) {
+        toogleImg.setAttribute('src','assets/ICONS/sun-solid-24.png')
+    } else {
+        toogleImg.setAttribute('src','assets/ICONS/moon-solid-24.png')
+    }
+}
+
+// remove-menu
+ 
+let removeMenu = () => {
+    if(document.querySelector('body').scrollWidth <= 1320) {
+        Ul.style.display = 'none';
+    } 
+    if (document.querySelector('body').scrollWidth >= 1320) {
+        Ul.style.display = 'flex';
+    }
+     
+}
+
+
+window.addEventListener('scroll', removeMenu)
+
 
 
 

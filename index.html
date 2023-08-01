@@ -30,19 +30,22 @@
     <header class="">
         <div class="container">
             <nav>
-                <a href="" class="logo">Fabio</a>
-                <div class="menuMobile">
-                    <div class="mm_line"></div>
-                    <div class="mm_line"></div>
-                    <div class="mm_line"></div>
+                <a href="" class="logo toogle">Fabio</a>
+                <div class="menuMobile  ">
+                    <div class="mm_line mmToogle"></div>
+                    <div class="mm_line mmToogle"></div>
+                    <div class="mm_line mmToogle"></div>
                 </div>
                 <ul>
-                    <li class=""><a href="#banner" class="">Home</a> </li>
-                    <li class=""> <a href="#Sobre" class="">Sobre</a> </li>
-                    <li class=""><a href="#Habilidades" class="">Habilidades</a> </li>
-                    <li class=""><a href="#Portfolio" class="">Portfolio</a> </li>
-                    <li class=""><a href="#Contato" class="">Contato</a> </li>
+                    <li class="toogle"><a href="#banner" class="toogle">Home</a> </li>
+                    <li class="toogle"> <a href="#Sobre" class="toogle">Sobre</a> </li>
+                    <li class="toogle"><a href="#Habilidades" class="toogle">Habilidades</a> </li>
+                    <li class="toogle"><a href="#Portfolio" class="toogle">Portfolio</a> </li>
+                    <li class="toogle"><a href="#Contato" class="toogle">Contato</a> </li>
+                    <img src="assets/ICONS/moon-solid-24.png" alt="" onclick="ToggleDarkTheme()" class="toogle-img"
+                        style="cursor: pointer;">
                 </ul>
+
             </nav>
         </div>
     </header>
@@ -84,11 +87,18 @@
                 <article class="flex-sobre"><img src="assets/img/quem-sou-eu.svg" alt=""></article>
                 <article>
                     <p>
-                        Olá, me chamo Fábio, tenho 16 anos, estou cursando o 1°ano do Ensino Médio, atualmente estou me
-                        especializando na área de desenvolvedor de software, uma área que eu estudo desde o ano passado
-                        e gosto muito, pois me possibilita tirar as ideias do papel e colocar no mundo. Atualmente estou
-                        aprendendo HTML5 e CSS3, mas estou aberto para aprender novas tecnologias e aprendizados, também
-                        estou me dedicando a aprender inglês, pois pode me possibilitar novas portas ao mundo todo.
+                        Olá, meu nome é Fábio e tenho 17 anos. Atualmente, estou no 3° ano do Ensino Médio e continuo
+                        focado em minha jornada como desenvolvedor de software. Desde o ano passado, venho dedicando meu
+                        tempo e paixão a essa área, que me permite dar vida às minhas ideias e compartilhá-las com o
+                        mundo.
+                    <p>Minha jornada de aprendizado evoluiu, e além de me especializar em HTML5 e CSS3, agora estou
+                        entusiasmado em estudar JavaScript, uma linguagem de programação essencial no desenvolvimento
+                        web interativo. Estou empolgado com as possibilidades que o JavaScript pode proporcionar e estou
+                        comprometido em aprimorar minhas habilidades nesta linguagem versátil.</p>
+                    <p>Além disso, reconheço a importância do inglês como um diferencial para minha carreira. Continuo
+                        me dedicando a aprender o idioma, pois sei que isso abrirá novas portas e me possibilitará
+                        conexões com profissionais e oportunidades em todo o mundo.</p>
+
                     </p>
                     <div class="Sobre-area-informacao">
                         <div class="Sobre-informacao">
@@ -97,7 +107,7 @@
                         </div>
                         <div class="Sobre-informacao">
                             <i class='bx bxs-phone'></i>
-                            <p>+55 (11) 964736174</p>
+                            <p>+55 (11) 910735830</p>
                         </div>
                         <div class="Sobre-informacao">
                             <i class='bx bxs-envelope'></i>
@@ -219,7 +229,7 @@
                 </article>
 
                 <article class="portfolio-card" data-aos-delay="1500" data-aos="fade-down" data-aos-duration="2000">
-                     <div class="img-portfolio"><img src="assets/img/projeto-DS.png" alt=" imagem do projeto3"></div> 
+                    <div class="img-portfolio"><img src="assets/img/projeto-DS.png" alt=" imagem do projeto3"></div>
                     <div class="titulo-portfolio">
                         <h3>Empresa DS Projetos</h3>
                     </div>
@@ -227,10 +237,11 @@
                         <p>Projeto recentemente que realizei a uma empresa no ramo de internet e fios.
                         </p>
                     </div>
-                     <div class="tecnologias-portfolio">
+                    <div class="tecnologias-portfolio">
                         <p>HTML, CSS e JAVASCRIPT </p>
-                    </div> 
-                     <div class="demo-portfolio"><a href="https://www.grupodsprojetos.com.br/" target="_blank" class="btn">Demo do site</a></div> 
+                    </div>
+                    <div class="demo-portfolio"><a href="https://www.grupodsprojetos.com.br/" target="_blank"
+                            class="btn">Demo do site</a></div>
                 </article>
 
                 <article class="portfolio-card" data-aos-delay="2000" data-aos="fade-down" data-aos-duration="2000">
@@ -251,6 +262,46 @@
                             class="btn">Demo
                             do site</a></div>
                 </article>
+
+                <article class="portfolio-card" data-aos-delay="2000" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="img-portfolio"><img src="assets/img/Projeto-5.PNG" alt="imagem do projeto 4"></div>
+                    <div class="titulo-portfolio">
+                        <h3>Relogio Virtual</h3>
+                    </div>
+                    <div class="descricao-portfolio">
+                        <p>
+                            Projeto criado com a intenção de simular um relógio vitual onde mostrará as horas em tempo
+                            real
+                        </p>
+                    </div>
+                    <div class="tecnologias-portfolio">
+                        <p>HTML/CSS e JS</p>
+                    </div>
+                    <div class="demo-portfolio"><a href="https://fabiobud.github.io/Rel-gio-Virtual-Website/"
+                            target="_blank" class="btn">Demo
+                            do site</a></div>
+                </article>
+
+                <article class="portfolio-card" data-aos-delay="2000" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="img-portfolio"><img src="assets/img/projeto-6.png" alt="imagem do projeto 4"></div>
+                    <div class="titulo-portfolio">
+                        <h3>Buscador de CEP</h3>
+                    </div>
+                    <div class="descricao-portfolio">
+                        <p>
+                            Projeto onde podemos buscar o CEP e mostrará o endereço, estado e entre outros
+                            atráves de uma API gratuita
+                        </p>
+                    </div>
+                    <div class="tecnologias-portfolio">
+                        <p>HTML/CSS e JS</p>
+                    </div>
+                    <div class="demo-portfolio"><a href="https://fabiobud.github.io/Buscador-CEP/" target="_blank"
+                            class="btn">Demo
+                            do site</a></div>
+                </article>
+
+
 
             </div>
         </div>
