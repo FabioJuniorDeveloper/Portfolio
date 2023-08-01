@@ -660,4 +660,15 @@ footer p {
     .area-portfolio {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
+
+    nav>ul>img {
+        position: absolute;
+        right: 17px;
+        top: 17px;
+
+    }
+
+    nav ul li {
+        width: 100%;
+    }
 }
