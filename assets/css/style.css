@@ -39,6 +39,7 @@ body {
     background-color: #FFF;
     color: var(--color-text);
     width: 100%;
+    transition: all ease 0.5s;
 }
 
 .container {
@@ -123,6 +124,10 @@ nav ul {
     align-items: center;
 }
 
+nav ul li {
+    transition: all ease 0.5s;
+}
+
 nav a {
     margin-right: 20px;
     margin-left: 20px;
@@ -130,6 +135,7 @@ nav a {
     color: var(--color-text);
     font-weight: 500;
     font-size: 1rem;
+    transition: all ease 0.5s;
 }
 
 nav ul li a:hover {
@@ -481,6 +487,7 @@ footer p {
 
 .dark-mode-mm {
     background-color: #FFF;
+    transition: all ease 0.5s;
 }
 
 

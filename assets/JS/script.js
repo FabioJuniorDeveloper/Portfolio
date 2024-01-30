@@ -35,15 +35,18 @@ function AlterarTexto(TextoTech) {
 }
 
 //dark-mode
-const Ul  = document.querySelector('ul');
-let ToggleDarkTheme = () =>{
+const Ul = document.querySelector('ul');
+let ToggleDarkTheme = () => {
+
+
     const body = document.querySelector('body');
     const header = document.querySelector('header');
-    const elementAlink =  document.querySelectorAll('.toogle');
+    const elementAlink = document.querySelectorAll('.toogle');
     const toogleImg = document.querySelector('.toogle-img');
     const toogleMM = document.querySelectorAll('.mmToogle');
-     
+
     body.classList.toggle('dark-mode');
+    body.style.transition = 'all ease 0.5s';
     header.classList.toggle('dark-mode');
 
     for (let elementos of elementAlink) {
@@ -53,23 +56,22 @@ let ToggleDarkTheme = () =>{
         elementos.classList.toggle('dark-mode-mm')
     }
 
-    if(body.classList.contains('dark-mode')) {
-        toogleImg.setAttribute('src','assets/ICONS/sun-solid-24.png')
+    if (body.classList.contains('dark-mode')) {
+        toogleImg.setAttribute('src', 'assets/ICONS/sun-solid-24.png')
     } else {
-        toogleImg.setAttribute('src','assets/ICONS/moon-solid-24.png')
+        toogleImg.setAttribute('src', 'assets/ICONS/moon-solid-24.png')
     }
 }
 
 // remove-menu
- 
+
 let removeMenu = () => {
-    if(document.querySelector('body').scrollWidth <= 1320) {
+    if (window.scrollWidth <= 1320) {
         Ul.style.display = 'none';
-    } 
-    if (document.querySelector('body').scrollWidth >= 1320) {
+    } else if (window.scrollWidth >= 1320) {
         Ul.style.display = 'flex';
     }
-     
+
 }
 
 
